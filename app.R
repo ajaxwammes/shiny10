@@ -204,7 +204,7 @@ ui <- fluidPage(
           column(
             1,
             a(img(src = "Anywhr.png"), href =
-                "https://anywhr-affiliate.peachs.co/a/covidtravel", target = "_blank")
+                "https://anywhr-affiliate.peachs.co/a/covidtravel", id = 'partner', target = "_blank")
           )
         ))
       )))
@@ -349,7 +349,7 @@ ui <- fluidPage(
       br(),
       HTML("<p>Click here to get notified of changes: </p>"),
       HTML(
-        "<a href='https://forms.gle/6RmssgVwYGpMf3t77\' target='_blank'> -> Receive updates</a>"
+        "<a href='https://forms.gle/6RmssgVwYGpMf3t77\' id='notifications' target='_blank'> -> Receive updates</a>"
       ),
       br(),
       br(),
@@ -357,7 +357,7 @@ ui <- fluidPage(
       HTML("<h2>Contact</h2>"),
       HTML("<p>For questions, feedback and commercial purposes: </p>"),
       HTML(
-        "<a href='https://www.simplevisa.com' target='_blank'>https://www.simplevisa.com</a>"
+        "<a href='https://www.simplevisa.com/?utm_source=partners&utm_medium=banner&utm_campaign=covidtravel' id='simplevisa' target='_blank'>https://www.simplevisa.com</a>"
       ),
       br(),
       br(),

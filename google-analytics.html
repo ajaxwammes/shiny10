@@ -21,4 +21,24 @@
       page_path: '/'+e.target.dataset.value
     })
   });
+
+  $(document).on('click', '#partner', function(e) {
+    gtag('event', 'partner_link', {
+      'event_category': 'engagement',
+      'event_label': 'anywhr'
+    });
+  });
+
+  $(document).on('click', '#simplevisa', function(e) {
+    gtag('event', 'partner_link', {
+      'event_category': 'engagement',
+      'event_label': 'simplevisa'
+    });
+  });
+
+  $(document).on('click', '#notifications', function(e) {
+    gtag('event', 'request_notifications', {
+      'event_category': 'engagement'
+    });
+  });
 </script>

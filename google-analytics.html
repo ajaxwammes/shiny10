@@ -6,4 +6,19 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-166804787-1');
+
+  $(document).on('shiny:inputchanged', function(e) {
+    console.log(e)
+    gtag('event', 'page_view', {
+      page_title: 'Search',
+      page_path: '/search?q='+e.value+'&c='+e.name
+    })
+  });
+
+  $(document).on('click', '#tabbar a', function(e) {
+    gtag('event', 'page_view', {
+      page_title: e.target.dataset.value,
+      page_path: '/'+e.target.dataset.value
+    })
+  });
 </script>

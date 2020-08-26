@@ -135,6 +135,7 @@ ui <- fluidPage(
       '<script data-ad-client="ca-pub-8812626540932611" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
     )
   ),
+  tags$body(includeHTML("no-script.html")),
   HTML(
     '<title> Travel advice during COVID-19. Insight into global travel restrictions. </title>'
   ),
